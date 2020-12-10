@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react'
+import './App.css'
+import Heading from './components/Heading/Heading'
+import MetalMeta from './components/MetalMeta/MetalMeta'
+import SearchBar from './components/SearchBar/SearchBar'
+import Bands from './components/Bands/Bands'
 
-function App() {
+const App = () => {
+  const [searchInput, setSearchInput] = useState('')
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <Heading />
+      <MetalMeta />
+      <SearchBar searchInput={searchInput} setSearchInput={setSearchInput} />
+      <Bands searchInput={searchInput} />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

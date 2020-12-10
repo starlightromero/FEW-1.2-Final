@@ -1,0 +1,15 @@
+.Like {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+  margin-bottom: 10px;
+  width: 180px;
+}
+
+.Like p {
+  font-family: Metal;
+  font-size: 3rem;
+  margin: 0;
+}

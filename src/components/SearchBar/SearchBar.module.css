@@ -1,0 +1,18 @@
+.SearchBar {
+
+}
+
+.SearchBar input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid white;
+  color: white;
+  font-family: RudeMetal;
+  font-size: 2rem;
+  outline: none;
+  text-align: center
+}
+
+.SearchBar input::placeholder {
+  color: white;
+}
